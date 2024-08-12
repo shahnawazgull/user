@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-div">
+                <h2>Architect</h2>
+                <h3>DOWNLOAD APP <i class="fa-solid fa-arrow-down"></i></h3>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="Login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <h1>Welcome to Trading Dashboard</h1>
+            <h3>Access your account quickly and easily. If you’re already a member, simply enter your credentials to get
+                started.</h3>
+        </div>
+        <div class="btn">
+            <button><a href="Login.html">Login</a></button>
+            <button><a href="registration.html">Sign Up</a></button>
+        </div>
+    </main>
+    <script>
+        var icon = document.querySelector(".fa-bars");
+        var nav = document.querySelector("ul");
+        var flag = 0;
+        icon.addEventListener("click",function(){
+            if(flag == 0){
+                nav.style.display = "block";
+                flag = 1;
+            }else{
+                nav.style.display = "none";
+                flag = 0;
+
+            }
+        })
+    </script>
+</body>
+
+</html>
